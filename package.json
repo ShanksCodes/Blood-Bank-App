@@ -4,6 +4,7 @@
   "description": "Blood bank web app using MERN",
   "main": "server.js",
   "scripts": {
+    "server": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Abhishek",
