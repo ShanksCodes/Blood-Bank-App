@@ -47,12 +47,12 @@ const loginController = async (req, res) => {
       });
     }
     //check role
-    // if (user.role !== req.body.role) {
-    //   return res.status(500).send({
-    //     success: false,
-    //     message: "role dosent match",
-    //   });
-    // }
+    if (user.role !== req.body.role) {
+      return res.status(500).send({
+        success: false,
+        message: "role dosent match",
+      });
+    }
     //compare password
     const comparePassword = await bcrypt.compare(
       req.body.password,
