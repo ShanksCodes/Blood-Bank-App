@@ -205,7 +205,7 @@ const Form = ({ formType, submitBtn, formTitle }) => {
             </p>
           ) : (
             <p>
-              ALready Usser Please
+              Already User Please
               <Link to="/login"> Login !</Link>
             </p>
           )}
