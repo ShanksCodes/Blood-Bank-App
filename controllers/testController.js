@@ -1,7 +1,7 @@
 const testController = (req, res) => {
-  res.status(200).json({
-    message: "Hi his is a test route",
-    success: "true",
+  res.status(200).send({
+    message: "Welcome user",
+    success: true,
   });
 };
 
